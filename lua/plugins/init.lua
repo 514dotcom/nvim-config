@@ -37,4 +37,10 @@ return {
 
   -- Mason (LSP installer)
   { import = "plugins.mason" },
+
+  -- File Tree
+  { import = "plugins.neo-tree" },
+
+  -- Linting
+  { import = "plugins.lint" },
 }

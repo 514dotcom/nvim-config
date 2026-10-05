@@ -124,6 +124,42 @@ OpenCode запускается в **вертикальном сплите сп�
 | `<leader>d`   | Показать диагностику            |
 | `[d` / `]d`   | Предыдущая / следующая ошибка   |
 
+### Файловое дерево (Neo-tree)
+
+| Клавиша       | Действие                        |
+|---------------|---------------------------------|
+| `<leader>e`   | Открыть/закрыть файловое дерево |
+| `<leader>ef`  | Сфокусироваться на дереве       |
+| `<leader>eb`  | Показать буферы в дереве        |
+| `<leader>eg`  | Показать git статус в дереве    |
+| `<leader>er`  | Показать текущий файл в дереве  |
+
+Внутри дерева:
+
+| Клавиша | Действие |
+|---------|----------|
+| `o` / `Enter` | Открыть файл |
+| `s` | Открыть в вертикальном сплите |
+| `S` | Открыть в произвольном сплите |
+| `t` | Открыть в новой вкладке |
+| `a` | Создать файл/папку |
+| `d` | Удалить |
+| `r` | Переименовать |
+| `y` | Копировать |
+| `x` | Вырезать |
+| `p` | Вставить |
+| `H` | Показать скрытые файлы |
+| `R` | Обновить |
+
+### Lint (проверка кода)
+
+| Клавиша       | Действие                        |
+|---------------|---------------------------------|
+| `<leader>ll`  | Включить/выключить линтер       |
+
+Линтер автоматически проверяет код при сохранении файла. Поддерживаются:
+Python (pylint, ruff), JavaScript/TypeScript (eslint), Lua (selene), Go (golangci-lint), Rust (clippy), CSS (stylelint), Shell (shellcheck) и другие.
+
 ### Git (gitsigns)
 
 | Клавиша       | Действие                        |
@@ -193,6 +229,9 @@ OpenCode запускается в **вертикальном сплите сп�
 | [Todo Comments](https://github.com/folke/todo-comments.nvim) | TODO-комментарии |
 | [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim) | Отступы |
 | [Mason](https://github.com/williamboman/mason.nvim) | Установщик LSP |
+| [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim) | Файловое дерево |
+| [nvim-lint](https://github.com/mfussenegger/nvim-lint) | Линтер |
+| [Rainbow Delimiters](https://github.com/hiphish/rainbow-delimiters.nvim) | Разноцветные скобки |
 
 ---
 
@@ -227,7 +266,9 @@ OpenCode запускается в **вертикальном сплите сп�
         ├── telescope.lua       # Поиск
         ├── gitsigns.lua        # Git
         ├── toggleterm.lua      # OpenCode терминал
-        └── mason.lua           # Установщик LSP
+        ├── mason.lua           # Установщик LSP
+        ├── neo-tree.lua        # Файловое дерево
+        └── lint.lua            # Линтер
 ```
 
 ---

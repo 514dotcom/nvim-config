@@ -32,6 +32,18 @@ return {
           o = { "<cmd>OpenCodeToggle<CR>", "Toggle OpenCode Chat" },
           c = { "<cmd>OpenCodeCurrentBuf<CR>", "OpenCode from current file" },
         },
+        e = {
+          name = "File Tree",
+          e = { "<cmd>Neotree toggle<CR>", "Toggle file tree" },
+          f = { "<cmd>Neotree focus<CR>", "Focus file tree" },
+          b = { "<cmd>Neotree buffers<CR>", "File tree buffers" },
+          g = { "<cmd>Neotree git_status<CR>", "File tree git status" },
+          r = { "<cmd>Neotree reveal<CR>", "Reveal current file" },
+        },
+        l = {
+          name = "Lint",
+          l = { "<cmd>LintToggle<CR>", "Toggle linter" },
+        },
       },
     })
   end,
