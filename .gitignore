@@ -1,0 +1,9 @@
+# Neovim files
+.DS_Store
+*.swp
+*.swo
+*~
+*.orig
+
+# Lazy lock (auto-generated, but we keep it for reproducibility)
+# lazy-lock.json
